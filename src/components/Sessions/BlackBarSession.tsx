@@ -2,19 +2,15 @@ import Image from "next/image";
 
 export const BlackBarSession = () => {
   return (
-    <div>
-      {/* <Image
+    <div className="flex flex-col items-center justify-center h-full max-h-[134px] w-full relative">
+      <Image
         alt="black-bar"
-        src="black-bar.svg"
-        layout="fill"
-        className="z-[-1] absolute"
-      /> */}
-      {/* <Image
-        alt="black-bar-text"
-        src="black-bar-text.svg"
-        layout="fill"
-        className="z-[0] relative justify-center p-7 h-[58px]"
-      /> */}
+        src="testererer.svg"
+        fill
+        objectFit="cover"
+        className="w-full h-full z-[-1]"
+      />
+      <p className="text-xl font-semibold">CRIANDO HOJE O SEU AMANHÃ!</p>
     </div>
   );
 };

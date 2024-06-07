@@ -3,26 +3,20 @@ import { BlackBarSession } from "./BlackBarSession";
 
 export const BannerSession = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center h-[524px] justify-end py-[113px]">
       <div>
         <Image
           src="/test.svg"
           alt="banner-session"
           layout="fill"
           objectFit="cover"
-          className="absolute z-[-4]"
+          className="z-[-4]"
         />
       </div>
-      <div>
-        <Image
-          src="image-bg-text.svg"
-          alt="image-bg-text"
-          width={316}
-          height={78}
-          className="pt-[333px] pl-8"
-        />
+      <div className="flex flex-col w-full  max-w-[316px]">
+        <p className="text-2xl font-normal">CONHEÇA A FACULDADE ÚNICA</p>
+        <p className="text-[22px] font-normal">Criando hoje o seu amanhã.</p>
       </div>
-      <BlackBarSession />
     </div>
   );
 };
