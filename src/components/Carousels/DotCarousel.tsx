@@ -20,7 +20,7 @@ export const DotCarousel = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 1, // Changed to 1 for smoother navigation
+    slidesToScroll: 1,
     arrows: false,
     afterChange: (current: number) => setCurrentSlide(current),
     customPaging: (index: number) => (

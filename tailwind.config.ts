@@ -1,3 +1,4 @@
+import { poppins } from "@/app/layout";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
