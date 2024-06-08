@@ -1,10 +1,8 @@
 "use client";
 import useColorMode from "@/hooks/useColorMode";
 import Image from "next/image";
-import { IoIosArrowDown } from "react-icons/io";
 import { SearchBar } from "./SearchBar";
 import Link from "next/link";
-import { poppins } from "@/app/layout";
 
 const menuHeader = [
   { url: " /", name: "Gradução" },

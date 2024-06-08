@@ -1,7 +1,8 @@
 export interface IUserExperience {
-  image: string;
-  name: string;
-  role: string;
-  attest: string;
-  rating: string;
+  id: number;
+  user: string;
+  occupation: string;
+  image_url: string;
+  content: string;
+  google_score: string;
 }

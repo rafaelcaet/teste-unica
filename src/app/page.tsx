@@ -6,6 +6,7 @@ import { ExperienceSession } from "@/components/Sessions/ExperienceSession";
 import { GraduationSession } from "@/components/Sessions/GraduationSession";
 import { InfoSession } from "@/components/Sessions/InfoSession";
 import { VideoSession } from "@/components/Sessions/VideoSession";
+import { AttestsProvider } from "../../context/AttestsContext";
 
 export default function Home() {
   return (

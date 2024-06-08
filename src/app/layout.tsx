@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { MobileHeader } from "@/components/Header/MobileHeader";
 import { Footer } from "@/components/Footer/Footer";
+import { AttestsProvider } from "../../context/AttestsContext";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -38,12 +39,14 @@ export default function RootLayout({
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <div className="h-screen flex flex-col justify-between">
-          <Header />
-          <MobileHeader />
-          {children}
-          <Footer />
-        </div>
+        <AttestsProvider>
+          <div className="h-screen flex flex-col justify-between">
+            <Header />
+            <MobileHeader />
+            {children}
+            <Footer />
+          </div>
+        </AttestsProvider>
       </body>
     </html>
   );

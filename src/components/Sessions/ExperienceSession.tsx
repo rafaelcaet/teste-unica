@@ -35,7 +35,7 @@ export const ExperienceSession = () => {
         }}
         className="absolute right-0 top-0"
       />
-      <div className="w-full justify-center">
+      <div className="w-full justify-center   ">
         <ExperienceCarousel />
       </div>
     </div>
