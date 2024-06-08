@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const GraduationCard: React.FC<IInfoCard> = ({ imageURL, infoText }) => {
   return (
-    <div className="flex flex-col relative w-full items-center dark:text-black text-white">
+    <div className="flex flex-col relative w-full text-white dark:text-white items-center">
       <Image
         alt="info-card"
         src={imageURL}

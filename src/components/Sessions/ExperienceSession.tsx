@@ -1,19 +1,12 @@
 import Image from "next/image";
 import { ExperienceCarousel } from "../Carousels/ExperienceCarousel";
+import { poppins } from "@/app/layout";
 
 export const ExperienceSession = () => {
   return (
-    <div className="relative flex flex-col w-full h-full min-h-[616px]">
-      {/* <Image
-        src="bg-purple.svg"
-        alt="bg-purple"
-        width={0}
-        height={0}
-        style={{
-          width: "auto",
-          height: "100%",
-        }}
-      /> */}
+    <div
+      className={`relative flex flex-col text-white dark:text-white w-full h-full min-h-[616px] ${poppins.className}`}
+    >
       <div className="absolute bg-[#7500FF] w-full h-full min-h-[616px]" />
       <p className="font-normal text-xl text-center pb-12 leading-[22px] px-8 pt-[51px] z-[99]">
         Quem faz a escolha certa, não se arrepende

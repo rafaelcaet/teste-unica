@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../app/globals.css";
 import { IUserExperience } from "@/types/IUserExperience";
 import { ExperienceCard } from "../InfoCard/ExperienceCard";
+import { poppins } from "@/app/layout";
 
 const userExperienceItems: IUserExperience[] = [
   {

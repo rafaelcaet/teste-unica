@@ -11,7 +11,7 @@ export const BlueCardSession = () => {
           Mais que educação, uma transformação
         </p>
       </div>
-      <div className="flex flex-col gap-12 pb-[45px]">
+      <div className="flex md:flex-row md:gap-5 flex-col gap-12 pb-[45px]">
         {blueCardItems.map((blueCardItem, index) => (
           <div key={index}>
             <img

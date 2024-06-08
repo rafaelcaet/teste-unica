@@ -19,7 +19,7 @@ const infoItems: IInfoCard[] = [
 
 export const InfoSession = () => {
   return (
-    <div className="flex flex-col  dark:text-black w-full h-full p-8">
+    <div className="flex flex-col dark:text-black w-full h-full p-8">
       <div className="text-center flex flex-col gap-[26px] ">
         <p className="text-xl font-normal leading-[26px]">
           Perfeita para você!
@@ -33,7 +33,7 @@ export const InfoSession = () => {
         </p>
       </div>
       <div
-        className={`flex flex-col gap-9 pt-12 pb-[45px] ${poppins.className}`}
+        className={`flex flex-col md:flex-row gap-9 pt-12 pb-[45px] ${poppins.className}`}
       >
         {infoItems.map((infoItem, index) => (
           <InfoCard key={+index} {...infoItem} />

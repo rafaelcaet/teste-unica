@@ -26,15 +26,15 @@ const graduationBannerItems = [
 export const GraduationSession = () => {
   return (
     <div className="flex flex-col w-full h-full">
-      <div className="text-center flex flex-col gap-1 ">
-        <p className="font-normal text-xl text-white dark:text-black leading-[26px]">
+      <div className="text-center flex text-white dark:text-black flex-col gap-1 ">
+        <p className="font-normal text-xl  leading-[26px]">
           Sua jornada é Única
         </p>
         <p className={`font-normal text-[15px] leading-6 ${poppins.className}`}>
           Escolha a melhor modalidade para você!
         </p>
       </div>
-      <div className="grid grid-cols-2 pt-12">
+      <div className="grid grid-cols-2 md:flex pt-12">
         {graduationBannerItems.map((graduationBanner, index) => (
           <GraduationCard
             key={+index}

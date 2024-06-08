@@ -24,8 +24,14 @@ export const DotCarousel = () => {
     arrows: false,
     afterChange: (current: number) => setCurrentSlide(current),
     customPaging: (index: number) => (
-      <div className={index === currentSlide ? "bg-red-500" : "bg-gray-500"}>
-        <div className="w-3 h-3 rounded-full mx-1"></div>
+      <div
+        className={
+          index === currentSlide
+            ? "bg-[#7500FF] rounded-full w-3"
+            : "bg-gray-500  rounded-full w-3"
+        }
+      >
+        <div className="w-3 h-3 rounded-full gap-[7px]"></div>
       </div>
     ),
     dots: true,
@@ -37,13 +43,13 @@ export const DotCarousel = () => {
   };
 
   return (
-    <div className="slider-container">
+    <div className="slider-container ">
       <Slider {...settings} ref={sliderRef}>
         {rectangleCarouselImages.map((image, index) => (
-          <div key={index} className="h-[200px] w-[300px]">
+          <div key={index} className="h-[200px] w-[300px] md:px-1 md:h-[349px]">
             <img
               src={image}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover md:w-[284px] md:h-[349px] gap-5"
               alt={`Slide ${index + 1}`}
             />
           </div>
