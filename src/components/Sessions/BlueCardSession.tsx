@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { InfoCard } from "../InfoCard/InfoCard";
-
 const blueCardItems = ["blue-card-1.svg", "blue-card-2.svg", "blue-card-3.svg"];
 
 export const BlueCardSession = () => {

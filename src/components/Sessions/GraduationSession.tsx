@@ -1,7 +1,4 @@
-import Image from "next/image";
-import { InfoCard } from "../InfoCard/InfoCard";
 import { GraduationCard } from "../InfoCard/GraduationCard";
-import { text } from "stream/consumers";
 import { poppins } from "@/app/layout";
 
 const graduationBannerItems = [
