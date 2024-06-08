@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Krona_One } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
+import { MobileHeader } from "@/components/Header/MobileHeader";
 import { Footer } from "@/components/Footer/Footer";
 
 export const poppins = Poppins({
@@ -39,6 +40,7 @@ export default function RootLayout({
         />
         <div className="h-screen flex flex-col justify-between">
           <Header />
+          <MobileHeader />
           {children}
           <Footer />
         </div>

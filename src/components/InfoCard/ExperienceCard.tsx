@@ -11,7 +11,7 @@ export const ExperienceCard: React.FC<IExperienceCard> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col  gap-[51.66px] justify-center px-[38.65px] items-center rounded-md shadow-[10px_10px_#000000]/20  bg-[#A68BFF66]/40 w-full h-full min-h-[416.41px]`}
+      className={`flex flex-col gap-[51.66px] justify-center px-[38.65px] items-center xl:w-[384px] w-[300px] rounded-md shadow-[10px_10px_#000000]/20  bg-[#A68BFF66]/40 h-full min-h-[416.41px]`}
     >
       <p className="text-[9px] text-center h-[160px] font-light leading-[13.5px] ">
         {userExperience.attest}

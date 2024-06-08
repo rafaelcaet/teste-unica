@@ -5,7 +5,7 @@ interface ISearchInput {
 }
 export const SearchInput: React.FC<ISearchInput> = ({ placeholder }) => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full xl:max-w-[355px]">
       <span className="absolute inset-y-0 left-0 flex items-center pl-3">
         <Image
           alt="search-icon"

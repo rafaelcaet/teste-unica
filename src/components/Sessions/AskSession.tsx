@@ -24,7 +24,7 @@ const askSessionItems = [
 
 export const AskSession = () => {
   return (
-    <div className="flex flex-col w-full h-full px-8 pt-12">
+    <div className="hidden xl:flex flex-col w-full h-full px-8 pt-12">
       <div className="text-center flex flex-col gap-[26px] ">
         <p className="text-[32px] font-normal leading-[26px]">
           Perguntas frequentes

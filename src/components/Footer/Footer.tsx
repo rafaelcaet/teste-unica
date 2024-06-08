@@ -13,9 +13,11 @@ export const Footer = () => {
     >
       <AskSession />
       <FooterCourses />
-      <FooterSocialLinks />
-      <DownloadApps />
-      <Emec />
+      <div className="flex flex-col xl:flex-row  w-full">
+        <FooterSocialLinks />
+        <DownloadApps />
+        <Emec />
+      </div>
       <div className="h-px w-full bg-white dark:bg-black" />
       <KnowMore />
       <div className="h-px w-full bg-white dark:bg-black" />

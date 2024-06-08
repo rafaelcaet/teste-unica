@@ -3,13 +3,32 @@ import useColorMode from "@/hooks/useColorMode";
 import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 import { SearchBar } from "./SearchBar";
+import Link from "next/link";
+import { poppins } from "@/app/layout";
+
+const menuHeader = [
+  { url: " /", name: "Gradução" },
+  { url: "/", name: "Segunda Graduação" },
+  { url: "/", name: "Pós-graduação" },
+  { url: "/", name: "Disciplinas Isoladas" },
+  { url: "/", name: "Cursos Grátis" },
+  { url: "/", name: "Bolsas de Estudo" },
+];
+
 export const Header = () => {
   const [colorMode, setColorMode] = useColorMode();
   return (
-    <div>
-      <div className="bg-black opacity-70 flex justify-between px-8 items-center h-[35px]">
-        <IoIosArrowDown className="text-white w-[9.13px] h-[14px]" />
-        <Image alt="logo" src="logo.svg" width={71.58} height={22} />
+    <div className="hidden xl:flex flex-col">
+      <div className=" bg-black flex opacity-70 justify-between py-6 px-[123px] items-center h-[35px]">
+        {menuHeader.map((item, index) => (
+          <Link
+            className="text-white text-[17px] leading-5"
+            key={index}
+            href={item.url}
+          >
+            {item.name}
+          </Link>
+        ))}
         <button
           onClick={() => {
             if (typeof setColorMode === "function")

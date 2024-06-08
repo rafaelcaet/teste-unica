@@ -19,9 +19,25 @@ export const DotCarousel = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
     afterChange: (current: number) => setCurrentSlide(current),
     customPaging: (index: number) => (
       <div
@@ -43,13 +59,13 @@ export const DotCarousel = () => {
   };
 
   return (
-    <div className="slider-container ">
+    <div className="slider-container">
       <Slider {...settings} ref={sliderRef}>
         {rectangleCarouselImages.map((image, index) => (
-          <div key={index} className="h-[200px] w-[300px] md:px-1 md:h-[349px]">
+          <div key={index} className="xl:px-3">
             <img
               src={image}
-              className="h-full w-full object-cover md:w-[284px] md:h-[349px] gap-5"
+              className="h-full w-full object-cover max-w-[154px] sm:max-w-full xl:max-w-[284px] xl:h-[349px]"
               alt={`Slide ${index + 1}`}
             />
           </div>

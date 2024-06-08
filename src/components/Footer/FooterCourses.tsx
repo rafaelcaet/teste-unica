@@ -58,7 +58,7 @@ export const FooterCourses = () => {
   return (
     <div className="flex flex-col text-white dark:text-black text-[10px] gap-[22px] leading-[22.32px] px-8 py-[22px]">
       <p className="font-bold text-xs">Graduação</p>
-      <div className="grid grid-cols-2 gap-x-4">
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-x-4">
         {footerCoursesItems.map((course, index) => (
           <Link
             href="/"
